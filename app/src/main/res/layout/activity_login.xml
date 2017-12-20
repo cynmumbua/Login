@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    android:paddingLeft= "@dimen/activity_horizontal_margin"
+    android:paddingRight = "@dimen/activity_horizontal_margin"
+    android:paddingTop = "@dimen/activity_vertical_margin"
+    android:paddingBottom = "@dimen/activity_vertical_margin"
+    tools:context = "com.example.android.loginuser.LoginActivity">
+ <!--   android:background="#616161"-->
+
+
+    <TextView
+        android:text = "Login"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/log"
+        android:textSize = "35dp"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true"
+        android:textColor="#009688"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:layout_below = "@+id/log"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Register here"
+        android:id = "@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal = "true"
+        android:textColor = "#1DE9B6"
+        android:textSize = "18sp" />
+
+    <EditText
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/editText"
+        android:hint = "Username"
+        android:focusable = "true"
+        android:textColorHighlight = "#ff7eff15"
+        android:textColorHint = "#1DE9B6"
+        android:layout_marginTop = "46dp"
+        android:layout_below = "@+id/textView"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:textColorHint="#1DE9B6"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
